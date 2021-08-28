@@ -1,0 +1,17 @@
+header, main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+}
+button{
+  width: 80px;
+}
+
+#turnOff{ /* Para carregamento da página */
+display: none;
+}
