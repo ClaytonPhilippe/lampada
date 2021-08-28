@@ -15,25 +15,29 @@ function isLampBroken(){
 function lampOn(){
   if( !isLampBroken () ){ /* Vamos verificar, antes de ligar ou desligar a lâmpada, se ela está quebrada.
     Quando a lâmpada não estiver quebrada, vai trocar normalmente para ligada (! significa não.)  */
-  lamp.src= './img/ligada.jpg'; /* Vai fazer a troca da imagem, alterando pelo lamp. */
+  lamp.src= './img/ligada.png'; /* Vai fazer a troca da imagem, alterando pelo lamp. */
   document.getElementById('turnOn').style.display = "none";
   document.getElementById('turnOff').style.display = "block";
+  document.body.style.backgroundColor = "#FFE22E"; 
 }
 }
 
 function lampOff(){
   if( !isLampBroken () ){  
-  lamp.src= './img/desligada.jpg'; 
+  lamp.src= './img/desligada.png'; 
   document.getElementById('turnOn').style.display = "block";
   document.getElementById('turnOff').style.display = "none";
+  document.body.style.backgroundColor = "black"; 
   }
 }
 
 
 function lampBroken(){
-  lamp.src='./img/quebrada.jpg'
+  lamp.src='./img/quebrada.png'
+  document.body.style.backgroundColor = "black";
 }
 
+document.body.style.backgroundColor = "black"; 
 
 //Evento ao passar o mouse sobre a imagem:
 turnOn.addEventListener('click', lampOn); /* Quando escutar o clique 'click', vai ligar a lâmpada, puxando
